@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/ab.css">
+    <title>Address Book</title>
+</head>
+<body>
+    
+    <main>
+      <h1 style="background-color: orange; padding: 8px">RM_PHONEBOOK
+<br><a href="show_saved_contacts.html"><button type="button" class="btn btn-success btn-lg pull-right" style='margin-right: 10px;margin-bottom: 10px;'>Show saved contacts</button></a>
+<div class="topnav">
+  <input type="text" placeholder="Search..">
+</div>
+</h1>
+        <section id="new-contact">
+            <h2>Add new contact</h2>
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input id="name" type="text"  maxlength="15" required placeholder="Name">
+                </div>
+                <div>
+                    <label for="dob">DOB:</label>
+                    <input id="dob" type="date" maxlength="30" required placeholder="date">
+                </div>
+                <div>
+                    <label for="tel">Mobile:</label>
+                    <input id="tel" type="tel" maxlength="15" required placeholder="+91 xxxxxxxxxxx">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" maxlength="30" required placeholder="abc@gmail.com">
+                </div>
+               
+                <div>
+                    <button>Save</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <script src="./scripts/ab.js"></script>
+</body>
+</html>
